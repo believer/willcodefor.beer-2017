@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>willcodefor.beer</title>
+
+  <link href="/favicon.ico" rel="icon" type="image/x-icon" />
+
+  <style>
+    body {
+      align-items: center;
+      display: flex;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      height: 100vh;
+      justify-content: center;
+      margin: 0;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    a {
+      color: #25292E;
+      text-decoration: none;
+    }
+
+    a:visited,
+    a:hover {
+      color: #25292E;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      grid-column-gap: 30px;
+      max-width: 900px;
+    }
+
+    .section__title {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .contact__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    .project__title {
+      font-weight: 400;
+      position: relative;
+    }
+
+    .project__title:after {
+      background-color: rgba(0, 0, 0, 0.2);
+      bottom: -10px;
+      content: "";
+      height: 1px;
+      left: 0;
+      position: absolute;
+      width: 60px;
+    }
+
+    .project__description {
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        height: 100%;
+      }
+
+      .container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="section">
+      <h3 class="section__title">Contact</h3>
+      <ul>
+        <li class="contact__item">
+          <strong>Github</strong>
+          <a href="https://github.com/believer">@believer</a>
+        </li>
+        <li class="contact__item">
+          <strong>Twitter</strong>
+          <a href="https://twitter.com/rickardlaurin">@rickardlaurin</a>
+        </li>
+        <li class="contact__item">
+          <strong>LinkedIn</strong>
+          <a href="https://www.linkedin.com/in/rickardlaurin/">Rickard Laurin</a>
+        </li>
+      </ul>
+    </div>
+    <div class="section">
+      <h3 class="section__title">Projects</h3>
+      <ul>
+        <li>
+          <h4 class="project__title">
+            <a href="https://github.com/believer/clearingnummer">Clearingnummer</a>
+          </h4>
+
+          <a href="https://npmjs.com/package/clearingnummer">
+            <img src="https://badge.fury.io/js/clearingnummer.svg" alt="">
+          </a>
+          <a href="https://npmjs.com/package/clearingnummer">
+            <img src="https://img.shields.io/npm/dt/clearingnummer.svg" alt="">
+          </a>
+
+          <a href="https://travis-ci.org/believer/clearingnummer">
+            <img src="https://travis-ci.org/believer/clearingnummer.svg" alt="">
+          </a>
+          <a href="https://codeclimate.com/github/believer/clearingnummer/coverage">
+            <img src="https://codeclimate.com/github/believer/clearingnummer/badges/coverage.svg" alt="">
+          </a>
+
+          <p class="project__description">Sort codes,
+            <em>clearingnummer</em> in Swedish, are four or five digit identifiers for Swedish banks. This package helps you
+            find the bank related to a specific number.</p>
+        </li>
+        <li>
+          <h4 class="project__title">
+            <a href="https://github.com/believer/telefonnummer">Telefonnummer</a>
+          </h4>
+
+          <a href="https://npmjs.com/package/telefonnummer">
+            <img src="https://badge.fury.io/js/telefonnummer.svg" alt="">
+          </a>
+          <a href="https://npmjs.com/package/telefonnummer">
+            <img src="https://img.shields.io/npm/dt/telefonnummer.svg" alt="">
+          </a>
+
+          <a href="https://travis-ci.org/believer/telefonnummer">
+            <img src="https://travis-ci.org/believer/telefonnummer.svg" alt="">
+          </a>
+          <a href="https://codeclimate.com/github/believer/telefonnummer/coverage">
+            <img src="https://codeclimate.com/github/believer/telefonnummer/badges/coverage.svg" alt="">
+          </a>
+
+          <p class="project__description">Telefonnummer is phone number in Swedish. This package formats all Swedish phone numbers, both mobile and landline,
+            to a standard format.</p>
+        </li>
+
+        <li>
+          <h4 class="project__title">
+            <a href="https://github.com/believer/movies-graphql-postgres">Movies GraphQL API</a>
+          </h4>
+
+          <a href="https://travis-ci.org/believer/movies-graphql-postgres">
+            <img src="https://travis-ci.org/believer/movies-graphql-postgres.svg" alt="">
+          </a>
+          <a href="https://codeclimate.com/github/believer/movies-graphql-postgres/coverage">
+            <img src="https://codeclimate.com/github/believer/movies-graphql-postgres/badges/coverage.svg" alt="">
+          </a>
+
+          <p class="project__description">What movies I've seen built with GraphQL and PostgreSQL.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
