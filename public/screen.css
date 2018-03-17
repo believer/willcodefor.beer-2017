@@ -5,83 +5,109 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
   font-weight: 400;
-  grid-template-columns: 1fr 900px 1fr;
+  grid-template-columns: 1fr 600px 1fr;
   margin: 0;
 }
 
 ul {
   list-style: none;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-  color: #25292e;
+  color: #b63252;
   text-decoration: none;
-}
-
-h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.618em;
-  font-weight: 500;
 }
 
 a:visited,
 a:hover {
-  color: #25292e;
+  color: #b63252;
+}
+
+.portfolio__name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0;
 }
 
 .container {
   display: grid;
   grid-column: 2;
+  grid-row-gap: 20px;
+  margin-bottom: 60px;
   margin-top: 60px;
 }
 
 .portfolio__header {
-  text-align: center;
+  display: grid;
+  grid-row-gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .portfolio__avatar {
   border-radius: 100%;
+  justify-self: center;
   width: 120px;
 }
 
-.section__title {
+.portfolio__contact {
+  display: grid;
+  font-size: 14px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.portfolio__section {
+  display: grid;
+  grid-row-gap: 20px;
+}
+
+.portfolio__section-title {
   font-family: "Montserrat", sans-serif;
+  font-size: 21px;
   font-weight: 500;
-  text-transform: uppercase;
+  margin: 0;
 }
 
-.contact__item:not(:last-child) {
-  margin-bottom: 10px;
+.portfolio__row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
 }
 
-.project__title {
-  font-weight: 400;
-  position: relative;
+.portfolio__project-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
 }
 
-.project__title:after {
-  background-color: rgba(0, 0, 0, 0.2);
-  bottom: -10px;
-  content: "";
-  height: 1px;
-  left: 0;
-  position: absolute;
-  width: 60px;
+.portfolio__project-meta {
+  font-size: 12px;
+  margin-top: 10px;
 }
 
-.project__description {
+.portfolio__project-description {
   font-size: 14px;
   line-height: 1.75;
 }
 
-@media (max-width: 768px) {
+.portfolio__project-description p:first-of-type {
+  margin-top: 0;
+}
+
+@media (max-width: 480px) {
   body {
-    height: 100%;
+    grid-template-columns: 1fr;
   }
 
   .container {
+    margin: 20px;
+  }
+
+  .portfolio__row {
+    grid-row-gap: 10px;
     grid-template-columns: 1fr;
-    padding: 20px;
   }
 }

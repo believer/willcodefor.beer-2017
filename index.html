@@ -16,64 +16,134 @@
   <div class="container">
     <header class="portfolio__header">
       <img class="portfolio__avatar" src="/public/rickard.jpg" alt="Photo of Rickard">
-      <h1>Rickard Laurin</h1>
+      <h1 class="portfolio__name">Rickard Laurin</h1>
+
+      <div class="portfolio__contact">
+        <a href="https://github.com/believer">Github</a>
+        <a href="https://twitter.com/rickardlaurin">Twitter</a>
+        <a href="https://www.linkedin.com/in/rickardlaurin/">LinkedIn</a>
+      </div>
     </header>
 
-    <div class="section">
-      <h3 class="section__title">Contact</h3>
-      <ul>
-        <li class="contact__item">
-          <strong>Github</strong>
-          <a href="https://github.com/believer">@believer</a>
-        </li>
-        <li class="contact__item">
-          <strong>Twitter</strong>
-          <a href="https://twitter.com/rickardlaurin">@rickardlaurin</a>
-        </li>
-        <li class="contact__item">
-          <strong>LinkedIn</strong>
-          <a href="https://www.linkedin.com/in/rickardlaurin/">Rickard Laurin</a>
-        </li>
-      </ul>
-    </div>
+    <section class="portfolio__section">
+      <h2 class="portfolio__section-title">Experience</h2>
 
-    <div class="section">
-      <h3 class="section__title">Projects</h3>
-      <ul>
-        <li>
-          <h4 class="project__title">
+      <div class="portfolio__row">
+        <div class="portfolio__project">
+          <h3 class="portfolio__project-title">
+            <a href="https://iteam.se">Iteam</a>
+          </h3>
+          <ul class="portfolio__project-meta">
+            <li>Web Developer</li>
+            <li>Stockholm, SWE</li>
+            <li>Nov 2012 - Present</li>
+          </ul>
+        </div>
+
+        <div class="portfolio__project-description">
+          <p>
+            Front-end development working predominantly with React / React Native, Redux. TDD, using Jest as well as Mocha/Sinon/Chai.
+            I Introduced GraphQL to the company, which I now used in multiple projects in production. I almost always use
+            privately as well.
+          </p>
+        </div>
+      </div>
+
+      <div class="portfolio__row">
+        <div class="portfolio__project">
+          <h3 class="portfolio__project-title">
+            <a href="https://mathem.se">MatHem</a>
+          </h3>
+          <ul class="portfolio__project-meta">
+            <li>Interaction designer</li>
+            <li>Stockholm, SWE</li>
+            <li>Dec 2011 - Nov 2012</li>
+          </ul>
+        </div>
+
+        <div class="portfolio__project-description">
+          <p>
+            MatHem delivers groceries directly to your door, either as a prepackaged concept with recipes or as individual products of
+            your choosing. MatHem has been selected as one of the best Swedish online stores two years running by Internetworld.
+          </p>
+
+          <p>
+            My job was mostly front-end development. I made mockups in Photoshop and then implemented the HTML, CSS and some jQuery on
+            the website. I also made flash banners for advertising campaigns.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio__section">
+      <h2 class="portfolio__section-title">Open Source</h2>
+
+      <div class="portfolio__row">
+        <div class="portfolio__project">
+          <h3 class="portfolio__project-title">
             <a href="https://github.com/believer/clearingnummer">Clearingnummer</a>
-          </h4>
+          </h3>
+        </div>
 
-          <a href="https://npmjs.com/package/clearingnummer">
-            <img src="https://badge.fury.io/js/clearingnummer.svg" alt="">
-          </a>
-          <a href="https://npmjs.com/package/clearingnummer">
-            <img src="https://img.shields.io/npm/dt/clearingnummer.svg" alt="">
-          </a>
-
-          <p class="project__description">Sort codes,
+        <div class="portfolio__project-description">
+          <p>
+            Sort codes,
             <em>clearingnummer</em> in Swedish, are four or five digit identifiers for Swedish banks. This package helps you
-            find the bank related to a specific number.</p>
-        </li>
-        <li>
-          <h4 class="project__title">
+            find the bank related to a specific number.
+          </p>
+
+          <a href="https://npmjs.com/package/clearingnummer">
+            <img alt="npm version" src="https://badge.fury.io/js/clearingnummer.svg" />
+          </a>
+          <a href="https://npmjs.com/package/clearingnummer">
+            <img alt="npm downloads" src="https://img.shields.io/npm/dt/clearingnummer.svg" />
+          </a>
+        </div>
+      </div>
+
+      <div class="portfolio__row">
+        <div class="portfolio__project">
+          <h3 class="portfolio__project-title">
             <a href="https://github.com/believer/telefonnummer">Telefonnummer</a>
-          </h4>
+          </h3>
+        </div>
+
+        <div class="portfolio__project-description">
+          <p>
+            Telefonnummer is phone number in Swedish. This package formats all Swedish phone numbers, both mobile and landline, to a
+            standard format.
+          </p>
 
           <a href="https://npmjs.com/package/telefonnummer">
-            <img src="https://badge.fury.io/js/telefonnummer.svg" alt="">
+            <img alt="npm version" src="https://badge.fury.io/js/telefonnummer.svg" />
           </a>
           <a href="https://npmjs.com/package/telefonnummer">
-            <img src="https://img.shields.io/npm/dt/telefonnummer.svg" alt="">
+            <img alt="npm downloads" src="https://img.shields.io/npm/dt/telefonnummer.svg" />
           </a>
+        </div>
+      </div>
 
-          <p class="project__description">Telefonnummer is phone number in Swedish. This package formats all Swedish phone numbers, both mobile and landline,
-            to a standard format.</p>
-        </li>
+      <div class="portfolio__row">
+        <div class="portfolio__project">
+          <h3 class="portfolio__project-title">
+            <a href="https://github.com/believer/track-duration">Track duration</a>
+          </h3>
+        </div>
 
-      </ul>
-    </div>
+        <div class="portfolio__project-description">
+          <p>
+            Converts milliseconds to a format like Spotify's track durations
+          </p>
+
+          <a href="https://npmjs.com/package/track-duration">
+            <img alt="npm version" src="https://badge.fury.io/js/track-duration.svg" />
+          </a>
+          <a href="https://npmjs.com/package/track-duration">
+            <img alt="npm downloads" src="https://img.shields.io/npm/dt/track-duration.svg" />
+          </a>
+        </div>
+      </div>
+    </section>
   </div>
 </body>
 
