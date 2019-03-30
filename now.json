@@ -1,6 +1,6 @@
 {
   "name": "willcodefor.beer",
-  "alias": ["willcodefor.beer", "www.willcodefor.beer"],
+  "alias": "willcodefor.beer",
   "version": 2,
   "builds": [
     { "src": "index.html", "use": "@now/static" },
@@ -8,6 +8,5 @@
     { "src": "*.ico", "use": "@now/static" },
     { "src": "*.jpg", "use": "@now/static" }
   ],
-  "routes": [{ "src": "/", "dest": "index.html" }],
   "regions": ["bru1"]
 }
